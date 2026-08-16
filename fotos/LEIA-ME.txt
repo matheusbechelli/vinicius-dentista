@@ -1,0 +1,63 @@
+COMO ADICIONAR AS FOTOS NO SITE
+================================
+
+Basta arrastar os arquivos de foto pra essa pasta "fotos" com o NOME EXATO
+abaixo (mesmo formato .jpg). Assim que a foto existir com esse nome, ela
+aparece sozinha no site — não precisa editar nenhum código.
+
+CARROSSEL DO TOPO (hero, logo que abre o site):
+  fotos/Primeiro bloco/foto-1.jpg  até  foto-23.jpg  (menos foto-18 e foto-21,
+  que foram tiradas do carrossel — os arquivos continuam na pasta, só não
+  aparecem mais no site)
+  -> Essas fotos são verticais (retrato), então uma sozinha não preenche a
+     largura toda do topo do site — por isso elas aparecem lado a lado, o
+     ideal é sempre em grupos de 3, cada grupo formando um slide do
+     carrossel. Hoje são 7 slides, todos com 3 fotos: foto-1 a 3, foto-4 a 6,
+     foto-7 a 9, foto-10 + 12 + 16, foto-13 a 15, foto-17 + 19 + 20, e
+     foto-11 + foto-22 + foto-23.
+  -> Pra trocar uma foto, só substituir o arquivo mantendo o mesmo nome.
+     Pra adicionar mais um slide (3 fotos novas), solte os arquivos como
+     foto-24.jpg, foto-25.jpg, foto-26.jpg dentro dessa mesma pasta
+     "Primeiro bloco" e depois abra o index.html, procure por "const
+     PRIMEIRO_BLOCO_SLIDES" (perto do final do arquivo) e adicione uma
+     linha nova com esses 3 arquivos, seguindo o mesmo padrão. Sempre em
+     grupos de 3 — não deixe um grupo incompleto (com 1 ou 2 fotos só).
+  -> tamanho recomendado: vertical (retrato), mínimo 900x1350px
+
+FOTO DO DR. VINICIUS (seção "Sobre"):
+  fotos/dr-vinicius.jpg
+  -> tamanho recomendado: quadrada ou vertical, mínimo 800x1000px
+
+FOTO DE DESTAQUE (seção "Lentes de Contato Dental"):
+  fotos/servico-lentes.jpg
+  -> tamanho recomendado: vertical, mínimo 900x1100px
+
+FOTO DE FUNDO DO "AGENDE" (seção final antes do rodapé):
+  fotos/cta-fundo.jpg
+  -> tamanho recomendado: paisagem, mínimo 1800x1200px
+
+PACIENTES CONHECIDOS (bloco sem título, logo abaixo da galeria em "Trabalhos",
+fotos coladas sem nome embaixo):
+  fotos/famosos/famoso-1.jpg  até  famoso-9.jpg
+  -> tamanho recomendado: vertical, mínimo 900x1100px
+  -> Pra trocar uma foto, só substituir o arquivo mantendo o mesmo nome.
+     Pra adicionar mais, solte o arquivo como famoso-10.jpg, famoso-11.jpg
+     etc. dentro da pasta "famosos" e depois abra o index.html, procure
+     por "const FAMOSOS" (perto do final do arquivo) e adicione a linha
+     correspondente.
+
+GALERIA "CADA SORRISO É UM CASO ÚNICO" (grade de fotos, mais abaixo no
+site, separada do carrossel do topo):
+  fotos/bocas/boca-1.jpg  até  boca-11.jpg
+  -> tamanho recomendado: paisagem ou quadrada, mínimo 1200x1200px
+  -> Pra trocar uma foto, só substituir o arquivo mantendo o mesmo nome.
+     Pra adicionar mais, solte o arquivo como boca-12.jpg, boca-13.jpg
+     etc. dentro da pasta "bocas" e depois abra o index.html, procure por
+     "const TRABALHOS" (perto do final do arquivo) e adicione a linha
+     correspondente.
+
+OUTRAS COISAS PRA PREENCHER NO index.html (procure por "CONFIG"):
+  - whatsapp: número real (só números, com DDI+DDD, ex: 5511999999999)
+  - instagram: link do perfil
+  - endereco: endereço do consultório
+  - nome completo, CRO e "+XX casos" / "X anos" na seção Sobre
